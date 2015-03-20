@@ -65,7 +65,10 @@ dif :: [Int] -> [Int] -> [Int]
 dif x y = zipWith (-) x y
 
 
+-- Função de alta ordem
 
+calc :: [Int] -> [Int]
+calc n = map(\n -> 2*n+1) n
 
 
 
