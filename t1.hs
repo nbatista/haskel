@@ -67,8 +67,13 @@ dif x y = zipWith (-) x y
 
 -- Função de alta ordem
 
+-- questao 1
 calc :: [Int] -> [Int]
 calc n = map(\n -> 2*n+1) n
+
+-- questao 2
+func :: [Int] -> [Int] -> [Int]
+func x y = zipWith(\x y -> 4*x+2*y+1) x y
 
 
 
