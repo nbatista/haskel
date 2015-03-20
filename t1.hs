@@ -60,3 +60,14 @@ charFound8 :: Char -> String -> Bool
 charFound8 x y = elem x y
 
 
+-- questao 9 
+dif :: [Int] -> [Int] -> [Int]
+dif x y = zipWith (-) x y
+
+
+
+
+
+
+
+
