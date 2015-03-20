@@ -49,7 +49,14 @@ htmlListItems :: [String] -> [String]
 htmlListItems [] = []
 htmlListItems x = ("<LI>" ++ (head x) ++ "</LI>") : htmlListItems (tail x)
 
+-- questao 7
+charFound :: Char -> String -> Bool
+charFound x [] = False
+charFound x (y:ys) = if (x==y) then True
+				else charFound x ys 
 
 -- questao 8
-charFound :: Char -> String -> Bool
-charFound x y = elem x y
+charFound8 :: Char -> String -> Bool
+charFound8 x y = elem x y
+
+
