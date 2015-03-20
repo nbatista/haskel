@@ -76,6 +76,14 @@ func :: [Int] -> [Int] -> [Int]
 func x y = zipWith(\x y -> 4*x+2*y+1) x y
 
 
+-- questao 4
+idade :: [Int] -> [Int]
+idade x = map(\x -> 2015-x)(filter (>20) x)
+
+
+
+
+
 
 
 
