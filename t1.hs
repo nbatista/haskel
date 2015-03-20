@@ -30,6 +30,3 @@ pot3 ns = (head ns)^3 : pot3 (tail ns)
 -- questao 3
 add10 :: [Int] -> [Int]
 add10 n = map(\n -> n+10)n
-
-addComma :: [String] -> [String]
-addComma x = [x ++ ","] 
