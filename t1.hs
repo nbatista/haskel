@@ -44,6 +44,10 @@ add10o n = map(+10)n
 addCommao :: [String] -> [String]
 addCommao x = map(++ ",")x
 
+-- questao 6
+htmlListItems :: [String] -> [String]
+htmlListItems [] = []
+htmlListItems x = ("<LI>" ++ (head x) ++ "</LI>") : htmlListItems (tail x)
 
 
 
