@@ -50,8 +50,6 @@ htmlListItems [] = []
 htmlListItems x = ("<LI>" ++ (head x) ++ "</LI>") : htmlListItems (tail x)
 
 
-
-
-
-
-
+-- questao 8
+charFound :: Char -> String -> Bool
+charFound x y = elem x y
