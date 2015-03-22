@@ -1,3 +1,7 @@
+-- NOME: NILTON CAMARGO BATISTA DA SILVA
+
+
+
 -- Soma os quadrados de 2 numeros
 doubleUs :: Int -> Int -> Int   
 doubleUs x y = x^2 + y^2
@@ -74,6 +78,11 @@ calc n = map(\n -> 2*n+1) n
 -- questao 2
 func :: [Int] -> [Int] -> [Int]
 func x y = zipWith(\x y -> 4*x+2*y+1) x y
+
+-- questao 3
+fun :: [String] -> [String]
+fun [] = []
+fun (x:xs) = take 10 (x ++ (repeat '.')) : fun xs
 
 
 -- questao 4
